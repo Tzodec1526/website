@@ -1,0 +1,57 @@
+# ─────────────────────────────────────────────────────────────────────────
+# tomcedoz.com — what NOT to publish.
+# This is a plain static HTML/CSS site. After `git init`, `git add .` will
+# stage everything EXCEPT the files matched below.
+# ─────────────────────────────────────────────────────────────────────────
+
+# Private / source materials — never publish
+# Original full-res headshot. Optimized copy is in assets/tom-cedoz.jpg.
+HH_60799955_Tom_Cedoz.jpg
+# Source manuscripts, including other authors' unpublished work.
+Writing/
+# Internal content-audit notes; working files, not for the public.
+review/
+# Internal QA backlog; do not publish.
+WEBSITE_BACKLOG.md
+# Internal legal/brand/privacy/browser review packet; do not publish.
+LAUNCH_REVIEW_PACKET.md
+# Generated deploy allowlist output.
+dist/
+# Internal advertising/dissemination snapshots; retain, do not publish.
+ad-records/
+
+# Logo marks made for the MUEFS project — not used by this website
+logo/
+
+# Local tooling / caches / editor / OS cruft
+# Local Claude Code + preview-server config.
+.claude/
+__pycache__/
+*.pyc
+.playwright-mcp/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.log
+
+# Scratch / preview pages (in case any get regenerated)
+*-preview.html
+*-options.html
+
+# ─────────────────────────────────────────────────────────────────────────
+# Build tooling is KEPT in the repo by default: build_resources.py,
+# seo_build.py, resources/_data/*.json and seo/*.json are the source of
+# truth that regenerates the site. They contain only public content
+# (already rendered into the HTML), so publishing them is safe and matches
+# the open-source spirit of the project.
+#
+# If you'd rather the public repo hold ONLY the deployable website — e.g.
+# you serve the repo root via GitHub Pages and don't want build_resources.py
+# reachable at tomcedoz.com/build_resources.py — uncomment these four lines:
+#
+# build_resources.py
+# seo_build.py
+# resources/_data/
+# seo/
+# ─────────────────────────────────────────────────────────────────────────

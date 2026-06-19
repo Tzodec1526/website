@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "reviewStatus": "approved-by-owner-2026-06-19",
+  "technicalPosture": {
+    "forms": false,
+    "newsletterSignup": false,
+    "accountsOrLogin": false,
+    "analytics": false,
+    "advertisingPixels": false,
+    "cookiesSetBySiteCode": false,
+    "localStorage": false,
+    "sessionStorage": false,
+    "thirdPartyFonts": false,
+    "directEmailLink": true,
+    "externalLinks": true
+  },
+  "deploymentFactsToConfirm": {
+    "sourceRepositoryHost": "GitHub",
+    "hostingProvider": "Porkbun via GitHub repository connector",
+    "cdnOrSecurityProvider": "not specified by owner",
+    "serverLogRetention": "not specified by owner",
+    "serverLogAccess": "not specified by owner"
+  },
+  "publicPolicyDecision": {
+    "status": "approved",
+    "decisionDate": "2026-06-19",
+    "summary": "Keep public privacy language generic; do not add host, CDN, or log-retention specifics at this time."
+  },
+  "notes": "Owner plans to upload through GitHub and host through Porkbun's GitHub repository connector. Public privacy page intentionally remains generic unless the deployed host configuration later requires more specific disclosure."
+}

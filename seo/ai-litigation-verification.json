@@ -1,0 +1,45 @@
+{
+  "key": "ai-litigation-verification",
+  "metaDescription": "A printable protocol for in-house teams using AI in litigation, and for supervising outside counsel who do. Verifying every AI citation stays nondelegable.",
+  "summary": "A practical verification protocol for in-house legal teams using generative AI in litigation, and for those supervising outside counsel who do, covering how to catch hallucinated citations, protect confidentiality, and meet court AI requirements.",
+  "keywords": [
+    "AI hallucination legal citation verification",
+    "ABA Formal Opinion 512 generative AI",
+    "AI use in litigation ethics",
+    "sanctions for fake AI case citations",
+    "court standing orders AI disclosure certification",
+    "supervising outside counsel AI use",
+    "outside counsel guidelines AI verification",
+    "confidentiality entering client data into AI tool",
+    "AI evidence authentication discovery",
+    "in-house counsel AI litigation checklist",
+    "duty of candor AI-assisted brief",
+    "engagement letter AI verification clause"
+  ],
+  "faq": [
+    {
+      "question": "Is a lawyer responsible for hallucinated citations an AI tool produced?",
+      "answer": "Yes. This page explains that a draft from a model is owned by the person who files it, exactly as a draft from a junior associate is, and that \"the tool generated it\" is not a defense. Competence, candor to the tribunal, and personal verification of every authority remain the lawyer's responsibility whatever produced the first draft. This is general information, not legal advice, and AI rules are moving quickly."
+    },
+    {
+      "question": "What does ABA Formal Opinion 512 cover on generative AI?",
+      "answer": "Per this page, ABA Formal Opinion 512 addresses generative AI and the duties of competence, confidentiality, communication, candor, and supervision. The page advises reading it directly and confirming how your own jurisdiction's rules and any state or local ethics opinions track or depart from it, because adoption and interpretation vary."
+    },
+    {
+      "question": "How do I verify AI-generated citations before filing a brief?",
+      "answer": "The protocol says to pull each case, statute, rule, and regulation against the primary source and confirm it exists, says what the draft claims, remains good law, and supports the proposition cited, reading the underlying text rather than the model's paraphrase. A citation that is perfectly formatted and plausibly named can be entirely fabricated, and factual assertions, record cites, dates, and party names should be verified too."
+    },
+    {
+      "question": "Can I enter case facts or client data into a consumer AI tool?",
+      "answer": "This page cautions that entering case facts, client data, or privileged material into a consumer or non-approved AI tool can breach confidentiality and may risk waiver. It advises confirming the tool is on the organization's approved list and that nothing sensitive went into a system that trains on or retains the data. When in doubt about a specific tool or jurisdiction, confirm against current rules."
+    },
+    {
+      "question": "How should in-house counsel address AI use by outside counsel?",
+      "answer": "The page suggests asking outside counsel how they verify AI-assisted work product, who is accountable, and how they handle confidential information, then putting permitted tools, human verification, confidentiality, court-order compliance, and disclosure expectations in the engagement letter and outside-counsel guidelines. A pattern it notes is making verification an affirmative obligation of the engagement rather than an implied courtesy."
+    },
+    {
+      "question": "Do courts require disclosure or certification of AI use in filings?",
+      "answer": "According to this page, a number of judges have issued standing orders or local rules on AI use: some require disclosure, some require certification that authorities were human-verified, and some restrict use outright. These vary by judge and are proliferating, so the page advises confirming the current requirements for the specific court, division, and judge before filing and calendaring a re-check."
+    }
+  ]
+}

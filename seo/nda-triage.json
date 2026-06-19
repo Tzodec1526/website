@@ -1,0 +1,45 @@
+{
+  "key": "nda-triage",
+  "metaDescription": "A green/yellow/red decision tree for triaging inbound NDAs, so routine ones sign under delegation and only genuinely risky terms reach counsel.",
+  "summary": "A green/yellow/red triage decision tree that helps in-house counsel and business owners sort inbound NDAs, signing routine ones under delegation and routing only the genuinely risky terms to legal review.",
+  "keywords": [
+    "how to triage inbound NDAs",
+    "when does an NDA need legal review",
+    "NDA red flags to escalate to counsel",
+    "non-solicit hidden in an NDA",
+    "residuals clause in NDA risk",
+    "NDA compelled disclosure subpoena carve-out",
+    "mutual vs one-way NDA which is riskier",
+    "standard NDA carve-outs checklist",
+    "delegate NDA signing authority to business owners",
+    "perpetual confidentiality term NDA",
+    "NDA review checklist for in-house counsel",
+    "embedded non-compete in NDA"
+  ],
+  "faq": [
+    {
+      "question": "When should an inbound NDA be escalated to counsel instead of signed?",
+      "answer": "Escalate to counsel (RED) when the NDA contains an embedded restrictive covenant such as a non-solicit, non-compete, or no-hire, or when it lacks a carve-out for disclosure compelled by law, subpoena, or court order; otherwise most standard, mutual, time-limited NDAs can sign under delegation. A single RED factor controls the lane regardless of how clean the rest of the agreement looks."
+    },
+    {
+      "question": "What two things turn a routine NDA red on sight?",
+      "answer": "An embedded non-solicit or non-compete, because an NDA is not the instrument for hiring or competitive restrictions and signing one to swap information can bind the company in ways no one priced; and a missing carve-out for legally compelled disclosure, which can put the company in breach the moment a subpoena arrives. Everything else is a matter of degree."
+    },
+    {
+      "question": "What is a residuals clause and why is it a problem in an NDA?",
+      "answer": "A residuals clause lets the other side use information retained in the unaided memory of its people without breach, which can quietly gut the protection you think you are getting. It can be tolerable in a mutual exchange of low-sensitivity information but is a real problem when you are the disclosing party handing over sensitive information, so it lands YELLOW and leans RED for the discloser."
+    },
+    {
+      "question": "Is a one-way or a mutual NDA riskier to sign?",
+      "answer": "A mutual NDA where both sides owe confidentiality generally signs GREEN, while a one-way NDA in which you are the receiving party warrants a closer YELLOW read because the obligations run in one direction, so any off-market terms are the ones that bind you."
+    },
+    {
+      "question": "What are the standard NDA carve-outs to check for?",
+      "answer": "Look for carve-outs covering information that is or becomes public through no fault of the recipient, was already known, is independently developed without use of the disclosure, or is rightfully received from a third party, plus a separate exception for disclosure compelled by law, subpoena, or court order. Missing standard carve-outs flag YELLOW; a missing compelled-disclosure carve-out is RED."
+    },
+    {
+      "question": "Can business owners sign routine NDAs without a lawyer?",
+      "answer": "Yes, if the GREEN lane is backed by a written delegation specifying who can sign, against what checklist, up to what sensitivity of information, with a bright line back to counsel. Keeping a short list of pre-approved fallback edits and a log of what cleared under delegation helps the business owner fix common YELLOW issues and confirms the lanes are drawn in the right place. This page is general information, not legal advice."
+    }
+  ]
+}

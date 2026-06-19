@@ -1,0 +1,45 @@
+{
+  "key": "ai-governance-inventory",
+  "metaDescription": "A six-step framework for lean AI governance: inventory shadow and embedded AI, risk-tier each use, set an intake gate, and scale controls.",
+  "summary": "A practical six-step framework that helps in-house counsel, GCs, and HR leaders stand up lightweight, proportionate AI governance by inventorying, risk-tiering, and overseeing AI that touches decisions about people.",
+  "keywords": [
+    "AI governance framework for in-house legal",
+    "how to inventory shadow AI at work",
+    "risk-tiering AI use cases",
+    "AI intake and approval process",
+    "controls for high-risk AI hiring tools",
+    "Colorado AI Act compliance",
+    "NYC Local Law 144 automated employment decision tools",
+    "EU AI Act for US companies",
+    "AI governance for small legal team",
+    "AI use policy and vendor diligence",
+    "human oversight requirements for AI decisions",
+    "disparate impact testing for AI hiring"
+  ],
+  "faq": [
+    {
+      "question": "What are the six steps to set up AI governance?",
+      "answer": "The framework runs in order: (1) inventory where AI is actually used, including embedded and shadow AI; (2) risk-tier each use; (3) assign a named owner and an approval gate; (4) set proportionate controls per tier; (5) monitor and reassess on a cadence; and (6) track the legal landscape. The first three stand up the system; the last three keep it honest as tools and laws change."
+    },
+    {
+      "question": "Where should I look to find AI that's already being used in my company?",
+      "answer": "Look in three places: tools you bought as AI (resume screeners, chatbots, forecasting models); AI features quietly switched on inside tools you already license (help-desk summarizers, applicant-tracking ranking, office-suite or CRM assistants); and shadow AI, meaning staff using consumer chatbots on personal accounts, often with company or customer data pasted in. A short survey plus a look at the software in use beats a perfect audit."
+    },
+    {
+      "question": "How do I risk-tier AI uses?",
+      "answer": "A workable three-tier cut: High for AI that makes or materially shapes consequential decisions about people (hiring, promotion, discipline, pay, lending or credit, insurance, housing, benefits, and clinical decisions); Medium for customer-facing uses and anything touching regulated or sensitive data; and Lower for internal productivity with a human between the output and any real-world action. Tier on what the tool affects, not how advanced it sounds."
+    },
+    {
+      "question": "Does using an AI vendor's tool shift legal responsibility away from my company?",
+      "answer": "No. AI changes the workflow, not the legal duties: anti-discrimination, consumer-protection, privacy, contract, and competence obligations apply the same whether a decision is made by a person, a spreadsheet, or a model. As the page puts it, \"the vendor's algorithm did it\" is not a defense."
+    },
+    {
+      "question": "Which AI laws should companies be tracking?",
+      "answer": "The page flags, among others, the Colorado AI Act and similar state efforts on high-risk AI, the EU AI Act for companies with EU operations or users, employment-AI rules like NYC Local Law 144 and Illinois measures on AI video interviews and biometrics, and FTC scrutiny of deceptive AI claims. The law is moving fast and fragmenting, so treat each as a pointer to check current status, scope, and applicability rather than a statement of what applies to you."
+    },
+    {
+      "question": "What controls should apply to high-risk AI?",
+      "answer": "For high-risk uses, the load-bearing controls are meaningful human oversight with real override authority, pre-deployment and ongoing testing for accuracy and disparate impact across protected groups, documented validation and monitoring, vendor diligence, and notice where required. Controls should scale with the tier rather than blanket every use, and this is general information, not legal advice."
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "key": "rif-compliance-checklist",
+  "metaDescription": "An 18-item reduction-in-force checklist: selection criteria, privileged adverse-impact review, WARN Act math, OWBPA releases, and the layoff communications plan.",
+  "summary": "A practical 18-item reduction-in-force compliance checklist for in-house counsel and HR leaders, covering selection criteria, privileged adverse-impact analysis, WARN Act and state mini-WARN notice, OWBPA release requirements, and how to run and document a layoff.",
+  "keywords": [
+    "reduction in force compliance checklist",
+    "RIF adverse impact analysis",
+    "WARN Act 60 day notice requirements",
+    "OWBPA release requirements for layoffs",
+    "layoff selection criteria documentation",
+    "state mini-WARN act notice",
+    "RIF decisional unit OWBPA disclosures",
+    "age discrimination layoff 40 and over",
+    "how long does a RIF take to do right",
+    "severance release ADEA waiver requirements",
+    "attorney client privilege adverse impact RIF",
+    "backfilling eliminated position after layoff"
+  ],
+  "faq": [
+    {
+      "question": "What should employers do before selecting employees for a reduction in force?",
+      "answer": "Write the business case first, in numbers and dated before selections begin, since it is the document the whole defense rests on. Define the decisional units, set selection criteria in writing before applying them, brief selecting managers on criteria only, and structure the legal review under privilege from the start because privilege cannot be retrofitted."
+    },
+    {
+      "question": "When does the federal WARN Act require notice for a layoff?",
+      "answer": "Federal WARN generally applies at 100 or more employees and requires 60 days' notice for a plant closing (50+ at a single site) or a mass layoff (500+, or 50–499 if a third of the site). Count the 90-day aggregation window, because staged layoffs can add up to a triggering event retroactively, and check state mini-WARN laws, several of which impose longer notice, lower thresholds, or broader definitions."
+    },
+    {
+      "question": "What are the OWBPA release requirements for laying off employees 40 and older?",
+      "answer": "Group programs require 45 days to consider the release plus decisional-unit disclosures listing the ages and job titles of those selected and not selected, while individual separations require 21 days; both carry a seven-day revocation period. A non-compliant release does not waive the age claim, so you paid for nothing."
+    },
+    {
+      "question": "How should an adverse-impact analysis be run during a RIF?",
+      "answer": "Run the analysis by decisional unit, comparing selected versus retained employees across age (40+, and within bands), race, sex, and other protected traits, and do it under privilege before the list is final while it can still change. Re-run it after every revision, because the analysis that matters is the one run on the list you actually used."
+    },
+    {
+      "question": "How long should a reduction in force take to do correctly?",
+      "answer": "Worked backward, a clean RIF of any size wants 6–10 weeks: criteria and analysis before selections finalize, WARN's 60 days if triggered, and OWBPA's 45-day consideration window running before separations take effect. The calendar, not the law, is what most often forces bad shortcuts, so set it first."
+    },
+    {
+      "question": "Why is backfilling an eliminated position after a layoff a problem?",
+      "answer": "Backfilling an \"eliminated\" position weeks later, with someone outside the protected class, is the single most quoted fact in RIF complaints. If the need truly returns, document why and consider recall rights first."
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "key": "litigation-hold-checklist",
+  "metaDescription": "A practical litigation hold checklist: when the duty to preserve attaches, scoping custodians and data sources, drafting the notice, and releasing the hold.",
+  "summary": "A full-lifecycle litigation hold checklist for in-house counsel and HR leaders, covering when the duty to preserve attaches through scoping, notice, maintenance, and formal release.",
+  "keywords": [
+    "when does the duty to preserve evidence attach",
+    "litigation hold checklist",
+    "litigation hold notice template steps",
+    "what triggers a litigation hold",
+    "spoliation sanctions Rule 37(e)",
+    "preserve text messages on personal phones BYOD",
+    "suspend auto-delete litigation hold",
+    "preserving CCTV footage for litigation",
+    "litigation hold for departing employees",
+    "how to release a litigation hold",
+    "EEOC charge preservation duty",
+    "third-party custodian preservation request"
+  ],
+  "faq": [
+    {
+      "question": "When does the duty to preserve evidence attach?",
+      "answer": "The duty to preserve attaches when litigation is reasonably foreseeable, which is almost always earlier than teams assume and well before anything is filed. Presumptive triggers include a demand or lawyer letter (received or sent), an agency charge such as an EEOC or OSHA complaint, a serious internal complaint or incident with injuries or significant loss, a credible threat of suit even if only verbal, and your own decision to pursue a claim against someone else."
+    },
+    {
+      "question": "Do litigation holds cover text messages on personal phones?",
+      "answer": "Yes. If supervisors run the operation by text, those messages are likely discoverable, and a bring-your-own-device (BYOD) arrangement makes preservation awkward but not optional. This is general information, not legal advice; whether specific data is discoverable depends on your facts and jurisdiction."
+    },
+    {
+      "question": "What data sources do litigation holds most often miss?",
+      "answer": "Commonly forgotten sources include text messages on personal phones, chat platforms like Slack and Teams (which may auto-delete after 30 or 90 days), mailboxes of departing employees (often auto-purged 30 days after termination), CCTV video on 7-30 day overwrite loops, operational telemetry such as badge data and machine logs, and third-party custodians like payroll vendors and managed IT providers."
+    },
+    {
+      "question": "Why does the paperwork around a litigation hold matter for sanctions?",
+      "answer": "In federal court, for electronically stored information, the serious sanctions such as adverse-inference instructions and dismissal generally require intent under Rule 37(e). Many state courts, and the standard for non-electronic evidence like video and physical items, are less forgiving — negligence or gross negligence can be enough — so confirm the rule in your forum. Either way, the absence of process — no timely notice, no auto-deletion suspension ticket, no acknowledgments, no reminders — is what can turn an honest IT oversight into something that looks like intent, so the paper trail functions as the defense."
+    },
+    {
+      "question": "How should you suspend auto-deletion when issuing a hold?",
+      "answer": "Suspend auto-deletion for the relevant custodians and systems — email retention rules, chat expiration, and recycling schedules — and open a ticket with IT, getting their confirmation in writing. This is the step whose absence shows up in sanctions opinions."
+    },
+    {
+      "question": "How do you properly release a litigation hold?",
+      "answer": "End the hold formally when the matter ends with a dated release memo stating what ended, why, and counsel sign-off, after which normal retention resumes. First check for overlapping holds so you do not release evidence still needed for another matter, and audit lingering 'zombie' holds annually because holds that never end effectively convert your retention policy into keeping everything forever."
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "key": "independent-contractor-classification",
+  "metaDescription": "A practical framework for testing employee vs. independent contractor status against the IRS, FLSA, ABC, NLRA, and ERISA tests that apply at once, with a red-flags checklist.",
+  "summary": "A step-by-step worker classification framework and red-flags checklist for in-house counsel and HR leaders, mapping the multiple legal tests (IRS, FLSA, state ABC, NLRA, ERISA) that judge contractor vs. employee status simultaneously.",
+  "keywords": [
+    "employee or independent contractor classification",
+    "independent contractor misclassification audit",
+    "ABC test independent contractor",
+    "FLSA economic reality test contractor",
+    "IRS common law test 1099 vs W-2",
+    "worker classification red flags checklist",
+    "reclassifying contractors to employees",
+    "independent contractor agreement enforceability",
+    "misclassification penalties back taxes overtime",
+    "how to classify workers under multiple tests",
+    "converting employees to independent contractors risk",
+    "contractors performing core business functions"
+  ],
+  "faq": [
+    {
+      "question": "Is there a single test for whether a worker is an employee or an independent contractor?",
+      "answer": "No. There is no single test; several apply at the same time, each with a different agency or statute behind it, including the IRS common-law test, the FLSA economic-reality test, state ABC tests, the NLRA, ERISA, and state UI/workers'-comp rules. A worker can pass one test while failing another, so status must be judged separately under each body of law that touches the relationship."
+    },
+    {
+      "question": "What is the ABC test for independent contractor classification?",
+      "answer": "The state ABC test presumes a worker is an employee unless all three prongs are met, including that the work falls outside the company's usual business. It governs wage and unemployment law in states that use it and is strict in jurisdictions such as California and Massachusetts, though it varies elsewhere."
+    },
+    {
+      "question": "What are the red flags that a worker may be misclassified as a contractor?",
+      "answer": "Warning signs include long-term, full-time \"contractors\" with no defined end; former employees converted to contractor status with the same duties; contractors performing core business functions; exclusivity with no other clients; company-set hours, location, and supervision; company-supplied tools and systems; no genuine profit-or-loss risk; and being integrated into the workforce. Any one is a reason to look harder, and several together usually mean a worker is misclassified under at least one applicable test."
+    },
+    {
+      "question": "Does a signed independent contractor agreement determine whether a worker is a contractor?",
+      "answer": "No. A well-drafted independent-contractor agreement helps but does not control, because agencies and courts look at how the relationship actually operates — who holds the right to control the work and who bears the economic risk. If the conduct says employee, the contract language will not save the classification."
+    },
+    {
+      "question": "What does misclassifying an employee as a contractor cost?",
+      "answer": "The exposure is rarely one bill. A single reclassification can trigger back employment taxes and withholding with penalties and interest; unpaid minimum wage and overtime extended by multi-year limitations periods and increased by liquidated damages; retroactive benefit and ERISA-plan claims; unpaid unemployment contributions and workers'-comp gaps; and state-law penalties that in some jurisdictions are steep and reach individuals personally — and because the tests run in parallel, one agency finding frequently invites the others."
+    },
+    {
+      "question": "If a worker is a contractor under one test but an employee under another, which controls?",
+      "answer": "This page advises planning around the employee characterization, because that is the one a plaintiff or agency will assert. Where a worker is a contractor under one applicable test but an employee under another, the framework recommends clearing the tests that can actually hurt you rather than assuming you must win every test for every worker."
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "key": "ai-employee-monitoring",
+  "metaDescription": "A 22-item checklist for deploying AI employee monitoring without buying notice, biometric (BIPA), NLRA, ADA, and discrimination exposure.",
+  "summary": "A practical 22-item legal checklist for in-house counsel and HR leaders deciding how to deploy AI-driven employee monitoring and scoring tools without creating notice, biometric, labor-law, disability, and discrimination exposure.",
+  "keywords": [
+    "legal risks of AI employee monitoring",
+    "is employee productivity monitoring legal",
+    "BIPA biometric employee monitoring compliance",
+    "all-party consent monitoring employee calls",
+    "NLRA AI surveillance protected concerted activity",
+    "can you fire an employee based on an AI score",
+    "flight-risk and productivity scoring legal exposure",
+    "disclosure notice requirements for workplace monitoring",
+    "ADA disability inferences from monitoring tools",
+    "AI monitoring vendor contract biometric indemnity",
+    "employee monitoring wiretap eavesdropping state law",
+    "off-duty conduct BYOD monitoring privacy"
+  ],
+  "faq": [
+    {
+      "question": "Is it legal to monitor employees with AI tools, and where does the real exposure come from?",
+      "answer": "The legal exposure rarely comes from the watching itself but from the notice nobody gave, the biometric data nobody cleared, and the manager who treats a productivity score as proof. Notice, non-discrimination, and the limits of state privacy and labor law apply to an algorithm exactly as they apply to a human watching over a shoulder. This is general information, not legal advice, and AI monitoring law is moving quickly and varies by jurisdiction."
+    },
+    {
+      "question": "Do I need to disclose AI employee monitoring or get consent?",
+      "answer": "Undisclosed monitoring is the single most common and most avoidable exposure; you should provide clear written notice of what data is collected, from which systems, for what purpose, and whether it factors into evaluation or discipline. Many state laws restrict intercepting or recording communications and several require all-party consent rather than one-party, with thresholds and covered channels varying sharply by state, so confirm current scope and consent requirements with counsel for each location."
+    },
+    {
+      "question": "Does AI employee monitoring trigger biometric privacy laws like BIPA?",
+      "answer": "The moment a tool processes a faceprint, voiceprint, or similar identifier through features like facial-recognition analytics or voice authentication, it may fall within a biometric privacy law such as Illinois's BIPA, and several other states have their own regimes with differing definitions. Statutory damages and private rights of action under some of these laws can be significant and the contours are actively litigated, so biometric features should be treated as off by default until compliance is confirmed."
+    },
+    {
+      "question": "Can I discipline or fire an employee based on an AI productivity or flight-risk score?",
+      "answer": "No score should be treated as proof; a flight-risk number, low productivity score, or sentiment flag is a signal to investigate, not a basis to discipline, and the evidence supporting an adverse action has to stand on its own without the score. AI scores are probabilistic, not factual, so a named human decision-maker must independently verify the underlying facts and own every disciplinary call, because 'the algorithm flagged it' is the answer that loses the case."
+    },
+    {
+      "question": "How does AI surveillance interact with the NLRA and union activity?",
+      "answer": "New, expanded, or covert monitoring that could reasonably tend to discourage employees from discussing pay, organizing, or raising workplace concerns has drawn scrutiny, and targeting monitoring at union or organizing activity is high-risk. The Board's posture on AI-driven surveillance has been an area of evolving attention, introducing or changing electronic monitoring may be a subject for bargaining in a represented workforce, and you should confirm the current state of the law before rolling out new surveillance."
+    },
+    {
+      "question": "Can monitoring tools that infer stress, mood, or wellness create ADA or discrimination problems?",
+      "answer": "Tools that infer stress, fatigue, mood, attention, or wellness are inferring something close to health, and acting on those inferences can implicate the ADA and related state law. Analytics applied unevenly or scoring models that perform worse for some populations can produce discrimination exposure even where no one intended it, so test for disparate impact, apply monitoring evenly, and account for approved accommodations that a productivity model might read as anomalous."
+    }
+  ]
+}

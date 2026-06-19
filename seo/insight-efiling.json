@@ -1,0 +1,45 @@
+{
+  "key": "insight-efiling",
+  "metaDescription": "Why Michigan e-filing stays fragmented despite MiFILE, and MUEFS, an open-source proof of concept for a unified statewide system across all 83 counties.",
+  "summary": "A long-form Michigan Litigation Journal article by litigator Tom Cedoz explaining why Michigan's court e-filing remains fragmented and presenting MUEFS, his open-source proof-of-concept for a unified statewide e-filing platform, written for attorneys, courts, SCAO, and access-to-justice advocates.",
+  "keywords": [
+    "Michigan e-filing system",
+    "MiFILE problems",
+    "Michigan statewide e-filing",
+    "MUEFS Michigan Unified E-Filing System",
+    "MiFILE upload limit",
+    "MCR 1.109 text-searchable PDF requirement",
+    "MCR 2.119 brief in support requirement",
+    "MCR 2.002 fee waiver",
+    "open source court e-filing software",
+    "Michigan counties without e-filing",
+    "CM/ECF replacement federal courts",
+    "agentic AI access to justice"
+  ],
+  "faq": [
+    {
+      "question": "Why is Michigan's court e-filing system still fragmented despite MiFILE?",
+      "answer": "MiFILE has brought real progress and now operates in 127 trial courts, but it grew court by court under contract and budget constraints rather than as a single statewide platform. The result is that attorneys still face different interfaces in different counties, some filing types that are not online at all, and entire courts reachable only by car or mail."
+    },
+    {
+      "question": "What is MUEFS (the Michigan Unified E-Filing System)?",
+      "answer": "MUEFS is a working open-source proof of concept built by litigator Tom Cedoz to demonstrate what a single unified e-filing platform could deliver across all 83 Michigan counties and every level of court, from Circuit, District, and Probate Courts up through the Court of Appeals and Supreme Court. It is explicitly not a finished product or a bid for a state contract, and a live demo is available at demo.tomcedoz.com with source code on GitHub under the AGPL-3.0 license."
+    },
+    {
+      "question": "What is the file upload size limit for MiFILE in Michigan?",
+      "answer": "According to the article, MiFILE's upload limit is 25 megabytes, which can be a constraint when scanning an exhibit binder or large discovery production. The MUEFS proof of concept demonstrates a 100-megabyte limit by comparison."
+    },
+    {
+      "question": "How could a unified e-filing system check Michigan Court Rules compliance automatically?",
+      "answer": "The article describes a system that checks formatting compliance by confirming a document is a text-searchable PDF (a SCAO e-filing standard) and flagging PII, and that prompts for required companion documents in context, such as a brief in support under MCR 2.119(A)(2), a proposed order, and a meet-and-confer certification under MCR 2.313 for discovery motions. These are presented as capabilities of the MUEFS proof of concept rather than features of any current statewide system."
+    },
+    {
+      "question": "Is there precedent for government-built open-source software working at scale?",
+      "answer": "The article cites the VA's VistA electronic health records system, which it states achieved a 99.997% pharmacy prescription accuracy rate, was rated the top EHR by physicians in independent surveys, and won Harvard's Innovations in American Government Award. It also notes the Administrative Office of the U.S. Courts is building a replacement for CM/ECF, with initial components in testing at six federal courts as of March 2026."
+    },
+    {
+      "question": "Is using AI to build court e-filing tools safer than using AI to give legal advice?",
+      "answer": "The article argues that using agentic AI tools to build and improve court infrastructure, such as encoding Michigan Court Rules into validation logic and surfacing required documents, operates in a domain where outputs can be tested and verified against objective rules. It contrasts this with large language models that attempt to provide legal advice or draft case-specific arguments, which it notes carry well-known risks of hallucination and incorrect statements of law."
+    }
+  ]
+}

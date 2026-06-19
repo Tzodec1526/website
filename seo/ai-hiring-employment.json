@@ -1,0 +1,45 @@
+{
+  "key": "ai-hiring-employment",
+  "metaDescription": "A practical employment-law framework for in-house counsel deploying AI in hiring: adverse-impact testing under privilege, ADA accommodation, vendor diligence, and audit rules.",
+  "summary": "A seven-step employment-law risk framework for in-house counsel, GCs, and HR leaders deploying AI in recruiting and hiring, covering inventory, adverse-impact testing, ADA accommodation, vendor diligence, and emerging notice and audit rules.",
+  "keywords": [
+    "AI hiring discrimination risk",
+    "adverse impact testing AI hiring tools",
+    "ADA accommodation AI assessments",
+    "NYC Local Law 144 bias audit",
+    "automated employment decision tools compliance",
+    "AI vendor diligence hiring",
+    "Illinois AI Video Interview Act",
+    "EEOC guidance AI hiring tools",
+    "Colorado AI Act employment",
+    "Title VII AI resume screening",
+    "age discrimination AI hiring proxies",
+    "employer liability AI vendor algorithm"
+  ],
+  "faq": [
+    {
+      "question": "Is an employer liable when an AI hiring tool built by a vendor discriminates?",
+      "answer": "Yes. The employer remains responsible for the outcome even when an outside vendor built and trained the model; Title VII, the ADEA, the ADA, and their state analogues still apply in full, and the EEOC and plaintiffs pursue the employer, not the vendor. \"The algorithm did it\" is not a defense. This is general information, not legal advice."
+    },
+    {
+      "question": "When should adverse-impact testing of an AI hiring tool be done?",
+      "answer": "Run a validation and adverse-impact analysis before go-live, structured through counsel so that, where it holds, privilege cannot be retrofitted after a problem surfaces. Routing the work through counsel can support a claim of privilege, but that protection is fact-dependent and frequently contested, especially where the same analysis also serves a business or compliance purpose, so confirm the approach with litigation counsel. Many teams also set a re-testing cadence, since models drift as they ingest new data and the applicant pool changes."
+    },
+    {
+      "question": "How should AI assessments handle applicants with disabilities under the ADA?",
+      "answer": "Provide an accessible alternative and a plainly stated, easy-to-use route to request an accommodation, staffed by someone who can actually grant one, and build that path before the first candidate needs it. Tools that infer health, disability, or emotional state from face or voice deserve particular scrutiny because they can stray toward a prohibited medical inquiry; EEOC guidance has addressed AI in this area, so confirm the current version and its standing before relying on it."
+    },
+    {
+      "question": "What state and local laws regulate AI in hiring?",
+      "answer": "A growing patchwork of state and local law imposes bias-audit, notice, or disclosure obligations on automated employment decision tools, including examples often associated with NYC Local Law 144, the Illinois AI Video Interview Act and BIPA, and the Colorado AI Act and other emerging regimes. These vary sharply and change quickly, so identify which plausibly apply to your candidates and operations and confirm the current scope, status, and thresholds with counsel rather than assuming a single national standard."
+    },
+    {
+      "question": "Can contractual indemnification from an AI vendor shift discrimination liability?",
+      "answer": "No. Indemnification scoped to discrimination exposure shifts cost, not the legal responsibility the statutes impose on the employer, and procurement claims of \"bias-free\" or \"EEOC-compliant\" AI are marketing, not a defense. Diligence should secure the actual bias-audit and validation results, job-relatedness evidence, and a contractual duty to produce audit data and witnesses if you face a charge."
+    },
+    {
+      "question": "Can AI hiring tools create age discrimination risk?",
+      "answer": "Yes. Adverse-impact exposure is not limited to race and sex; tools trained on an existing workforce can encode age, and proxies such as graduation year, \"digital native\" signals, or continuous-employment gaps can disfavor older applicants without naming the trait. Include age (40+) and the full set of protected characteristics in the adverse-impact analysis and watch for features that operate as stand-ins for a protected status."
+    }
+  ]
+}

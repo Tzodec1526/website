@@ -1,0 +1,45 @@
+{
+  "key": "severance-release-checklist",
+  "metaDescription": "A 19-point checklist for a defensible severance agreement and release: consideration, scope, OWBPA age waivers, NLRB limits, FLSA, and Section 409A.",
+  "summary": "A practical 19-item checklist for in-house counsel and HR leaders on building a severance agreement and release that holds up, covering consideration, scope, OWBPA age-waiver formalities, NLRB confidentiality and non-disparagement limits, and tax and operational terms.",
+  "keywords": [
+    "OWBPA severance agreement requirements",
+    "release of claims age discrimination ADEA waiver",
+    "McLaren Macomb severance non-disparagement",
+    "21 day and 7 day severance revocation period",
+    "what makes a severance release enforceable",
+    "decisional unit disclosures group layoff",
+    "can you release FLSA wage claims in severance",
+    "Section 409A severance pay",
+    "severance agreement consideration requirement",
+    "no-rehire clause discrimination settlement restrictions",
+    "confidentiality clause NLRB Section 7 rights",
+    "severance agreement carve-outs EEOC charge"
+  ],
+  "faq": [
+    {
+      "question": "What consideration is required for a severance release to be enforceable?",
+      "answer": "The employee must receive something new that they are not already owed; earned wages, accrued PTO where state law requires payout, vested benefits, and contractual commissions are debts, not consideration, so severance has to sit on top of them. The agreement should recite the amount, the timing, and that payment is contingent on the release and continued compliance."
+    },
+    {
+      "question": "What are the OWBPA requirements to waive an age-discrimination claim?",
+      "answer": "Under the ADEA as amended by the OWBPA, an age-claim waiver is effective only if it is knowing and voluntary: it must expressly reference age-discrimination rights, advise the employee in writing to consult an attorney, give at least 21 days to consider (45 days for a group exit-incentive program), and provide seven days after signing to revoke. A release that misses these formalities does not waive the age claim even if it still waives everything else."
+    },
+    {
+      "question": "How does McLaren Macomb affect confidentiality and non-disparagement clauses in severance agreements?",
+      "answer": "Under McLaren Macomb, confidentiality and non-disparagement clauses broad enough to deter employees from exercising Section 7 rights, such as discussing wages and working conditions or supporting co-workers, can be unlawful on their face, and the analysis turns on the language rather than on whether anyone is ever sued under it. The reach of the decision is still developing, so the current state of Board law should be monitored."
+    },
+    {
+      "question": "Can a severance agreement release FLSA wage and overtime claims?",
+      "answer": "Private releases of FLSA claims for unpaid minimum wage or overtime are often unenforceable without DOL or court supervision, and treatment varies by circuit and state. If a genuine wage dispute exists, it is generally better to resolve it on its own track rather than burying it in a global release."
+    },
+    {
+      "question": "What claims generally cannot be waived in a severance release?",
+      "answer": "Several categories survive almost any release, including unemployment eligibility, vested retirement and ERISA-plan benefits, the right to file a charge with or assist an agency, and, in many states, future claims that have not yet arisen. A release reaches claims existing as of signing, so it should be tied to a stated date and drafted to leave non-waivable rights visibly intact rather than purporting to release them."
+    },
+    {
+      "question": "Are no-rehire clauses allowed in severance and settlement agreements?",
+      "answer": "No-rehire terms are common, but several states now restrict or bar them in settlement of discrimination or harassment claims, so the rule in the governing state should be confirmed before including one."
+    }
+  ]
+}

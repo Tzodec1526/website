@@ -1,0 +1,45 @@
+{
+  "key": "demand-letter-triage",
+  "metaDescription": "An 8-step first-week framework for responding to a demand letter: deadlines, litigation hold, insurance notice, contract review, and choosing a response posture.",
+  "summary": "A practical eight-step framework for in-house counsel and business leaders on what to do in the first week after receiving a serious commercial demand letter.",
+  "keywords": [
+    "how to respond to a demand letter",
+    "received a demand letter what to do",
+    "demand letter first week checklist",
+    "litigation hold after demand letter",
+    "duty to preserve evidence demand letter",
+    "notify insurer of demand letter",
+    "late notice insurance coverage defense",
+    "demand letter response options",
+    "should I respond to a demand letter or stay silent",
+    "contract notice and cure provisions dispute",
+    "counter-demand vs holding letter",
+    "responding to threat of litigation in-house counsel"
+  ],
+  "faq": [
+    {
+      "question": "What should I do in the first week after receiving a demand letter?",
+      "answer": "Read it twice and calendar every date, treat preservation as triggered and issue a litigation hold, notify insurers, review the contract, map the relationship and money, gather facts under privilege, choose a response posture on purpose, and write any reply as a future exhibit. This is general information, not legal advice for your specific situation."
+    },
+    {
+      "question": "Does a demand letter trigger a duty to preserve evidence?",
+      "answer": "A credible demand letter generally means litigation is reasonably foreseeable, and the duty to preserve attaches at foreseeability rather than at filing, so the litigation hold should issue that same week. This is general information, not legal advice."
+    },
+    {
+      "question": "Should I notify my insurer after receiving a demand letter?",
+      "answer": "Yes — review every potentially responsive policy (CGL, D&O, E&O, EPL, cyber) and let the broker make the notice call with you now, because late notice is among the most litigated coverage defenses and waiting costs you nothing but options."
+    },
+    {
+      "question": "What are my options for responding to a demand letter?",
+      "answer": "There are roughly five postures, each right for some situations: silence (rarely), a holding letter that reserves rights and buys time, a substantive response when facts favor you, a counter-demand when they owe you more, or a scripted businessperson phone call. The point is to pick one deliberately."
+    },
+    {
+      "question": "Why does the contract matter when responding to a demand letter?",
+      "answer": "Read the contract as opposing counsel already has — notice and cure provisions, dispute escalation clauses, forum selection and choice of law, fee-shifting, damage caps, and any shortened limitations period. These clauses decide more commercial disputes than the merits do, and they cut both directions."
+    },
+    {
+      "question": "How should I write a response to a demand letter?",
+      "answer": "Write whatever you send as a future exhibit: factual, dated, accurate about the contract, concrete in what it asks for, and explicit in reserving rights — with no adjectives you'd wince at in front of a jury, no admissions wrapped in courtesy, and no threats you haven't decided to keep."
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "key": "privilege-in-house",
+  "metaDescription": "How in-house counsel protect attorney-client privilege in mixed legal/business communications: primary-purpose test, Upjohn warnings, work product, waiver traps.",
+  "summary": "A practical quick-reference for in-house counsel and GCs on keeping attorney-client privilege intact when legal and business advice mix, covering the primary-purpose test, Upjohn warnings, over-designation, waiver traps, work product, and cross-border limits.",
+  "keywords": [
+    "attorney-client privilege in-house counsel",
+    "primary purpose test privilege",
+    "Upjohn warning internal investigation",
+    "does cc'ing the GC make an email privileged",
+    "privilege waiver traps",
+    "subject matter waiver advice of counsel",
+    "work product vs attorney-client privilege",
+    "over-designation privilege log",
+    "in-house counsel privilege cross-border",
+    "sharing legal advice with auditors PR vendors waiver",
+    "marking documents privileged and confidential",
+    "legal advice vs business advice privilege"
+  ],
+  "faq": [
+    {
+      "question": "Does copying the GC on an email make it privileged?",
+      "answer": "No. Courts look at the substance of a communication, not the cc line or a header, so a business email does not become privileged simply because a lawyer received it. The attorney-client privilege protects only communications made for the purpose of obtaining or giving legal advice."
+    },
+    {
+      "question": "What is the primary-purpose test for in-house privilege?",
+      "answer": "When a communication serves both a legal and a business purpose, most courts apply a primary-purpose analysis: was obtaining or giving legal advice the dominant reason for the communication. Some courts instead ask whether legal advice was a primary purpose; the framing varies by jurisdiction, so it is worth confirming the current rule in your forum."
+    },
+    {
+      "question": "What is an Upjohn warning and when do you give it?",
+      "answer": "When counsel interviews an employee during an internal investigation, the privilege belongs to the company, not the employee. Before the substance, give an Upjohn warning: you represent the company rather than the employee individually, the conversation is privileged but the privilege is the company's to assert or waive, and the employee should keep the discussion confidential. Many in-house teams script the warning and record that it was given."
+    },
+    {
+      "question": "Why is over-designating documents as privileged a risk?",
+      "answer": "A privilege log padded with plainly non-privileged entries invites a challenge to the whole log, and a court that finds reflexive over-designation may order broad review, putting genuinely privileged communications at risk along with the rest. Reserving the label for documents that actually seek or convey legal advice is what keeps protection intact for the communications that matter."
+    },
+    {
+      "question": "What actions can waive attorney-client privilege?",
+      "answer": "Forwarding privileged material to anyone outside the privilege, such as auditors, consultants, business partners, or PR firms, generally waives it absent a structure designed to preserve protection. Partial disclosure can also trigger subject-matter waiver: voluntarily revealing part of a privileged communication, or relying on advice of counsel as a defense, can waive privilege over the entire subject matter."
+    },
+    {
+      "question": "How is work product different from attorney-client privilege?",
+      "answer": "Work-product protection covers material prepared in anticipation of litigation by or for counsel; it is distinct from privilege and in some respects broader, reaching facts and the analysis of non-lawyers working at counsel's direction. Protection turns on litigation being reasonably anticipated rather than merely possible, and opinion work product, meaning counsel's mental impressions and legal theories, receives the strongest protection of all."
+    }
+  ]
+}

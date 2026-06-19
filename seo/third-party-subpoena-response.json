@@ -1,0 +1,45 @@
+{
+  "key": "third-party-subpoena-response",
+  "metaDescription": "A 9-step checklist for non-parties served with a Rule 45 document or deposition subpoena: deadlines, objections, privilege, cost-shifting, notice.",
+  "summary": "A practical 9-step checklist for in-house counsel and HR leaders whose company is served with a document or deposition subpoena in a case it is not a party to, covering deadlines, preservation, objections, privilege, cost-shifting, and third-party notice.",
+  "keywords": [
+    "responding to a third-party subpoena",
+    "non-party subpoena response checklist",
+    "served with subpoena not a party",
+    "Rule 45 subpoena objection deadline",
+    "deadline to object to a document subpoena",
+    "non-party document subpoena cost-shifting",
+    "object to overbroad subpoena undue burden",
+    "litigation hold after subpoena",
+    "privilege objection to subpoena",
+    "protective order non-party subpoena",
+    "notice to third party before producing subpoena",
+    "meet and confer to narrow subpoena"
+  ],
+  "faq": [
+    {
+      "question": "How long do I have to object to a document subpoena under Rule 45?",
+      "answer": "Under federal Rule 45, written objections to a documents subpoena are generally due within 14 days of service, or before the compliance date if that is sooner. State analogs vary on timing, so confirm the governing rule; the deadline that controls your rights is almost always earlier than the date printed on the face of the subpoena."
+    },
+    {
+      "question": "What happens if a non-party misses the deadline to object to a subpoena?",
+      "answer": "Serving proper written objections within the window preserves your positions on burden, overbreadth, privilege, relevance, and confidentiality, and under Rule 45 generally means the issuing party must move to compel before you are required to produce. That written-objection mechanism applies to a document or inspection subpoena; a deposition subpoena is instead challenged by a timely motion to quash or modify or for a protective order, so confirm which track applies. Miss the window and you can waive objections you would otherwise have won."
+    },
+    {
+      "question": "Can a non-party recover the cost of responding to a subpoena?",
+      "answer": "Rule 45 directs courts to protect non-parties from significant expense, and a non-party can often seek reimbursement of meaningful production costs such as vendor fees, review time, and collection from legacy systems. Raise cost-shifting early and in writing, ideally during the meet-and-confer, rather than absorbing the cost and asking later."
+    },
+    {
+      "question": "Should I preserve documents after being served with a subpoena even if I haven't decided to produce?",
+      "answer": "Yes. Receipt of a subpoena is one of the clearest signals that responsive material must be preserved; issue or expand a litigation hold and suspend any auto-deletion touching the relevant people and systems, even though no decision to produce has been made. A preservation gap discovered after you surface as a non-party witness costs a great deal."
+    },
+    {
+      "question": "Do I need to notify third parties before producing documents in response to a subpoena?",
+      "answer": "Often yes. Before producing, check whether responsive material contains your trade secrets, customers' or vendors' confidential information, or employee or consumer personal data, because many contracts and several privacy regimes call for notice to or consent from the affected party, and some give them a right to intervene. Producing first and notifying later can breach a confidentiality agreement or a statutory duty."
+    },
+    {
+      "question": "Does a non-party have to comply with an overbroad subpoena because it isn't the target of the lawsuit?",
+      "answer": "No. Non-parties are entitled to protection from undue burden, and courts tend to apply proportionality with particular force when the recipient has no stake in the dispute. The moment to use that leverage is inside the objection window, through specific, particularized objections rather than boilerplate, not after it closes."
+    }
+  ]
+}

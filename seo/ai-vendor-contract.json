@@ -1,0 +1,45 @@
+{
+  "key": "ai-vendor-contract",
+  "metaDescription": "An 8-term checklist of the AI-specific contract risks standard SaaS templates miss: data training, output IP, indemnity, accuracy, exit.",
+  "summary": "A practical 8-term contract-risk checklist for in-house counsel, GCs, and HR leaders negotiating an agreement to buy an AI tool or AI-enabled service, covering the AI-specific terms a standard SaaS template overlooks.",
+  "keywords": [
+    "AI vendor contract checklist",
+    "negotiating AI tool SaaS agreement",
+    "does vendor train on our data clause",
+    "AI output IP infringement indemnity",
+    "AI model training opt-out contract language",
+    "AI tool data processing addendum DPA",
+    "AI bias audit materials from vendor",
+    "NYC Local Law 144 vendor cooperation",
+    "Colorado AI Act vendor contract",
+    "EU AI Act vendor obligations",
+    "AI accuracy disclaimer as-is reps",
+    "AI tool data deletion certification exit"
+  ],
+  "faq": [
+    {
+      "question": "What contract terms does a standard SaaS template miss for an AI tool?",
+      "answer": "A standard SaaS template was not written for a tool that ingests your data, generates outputs you rely on, and changes underneath you. This checklist groups the gaps into eight deal terms: outputs and IP, your data and model training, IP-infringement indemnity, accuracy and human oversight, model changes and versioning, transparency and auditability, compliance support for decision tools, and exit. These are general information, not legal advice, and AI contracting norms are moving fast."
+    },
+    {
+      "question": "Should an AI vendor be allowed to train on our data?",
+      "answer": "Data and model training is the term most often defaulted against you, because many tools train or improve their models on customer inputs unless you opt out, sometimes by default and buried in a referenced policy. The signed agreement, not a linked policy the vendor can revise, should state that your inputs and outputs are not used to train the vendor's or any third party's models, with any training feature opt-in and revocable."
+    },
+    {
+      "question": "Should an AI vendor indemnify us if an output infringes someone's IP?",
+      "answer": "Because an AI output can reproduce protected material and training data can carry infringement claims, the vendor should defend and indemnify you against third-party IP claims arising from the model's outputs and its training data, subject to reasonable conditions. That indemnity should sit outside any general liability cap, and you should watch the conditions and exclusions, since scope and caps vary widely among vendors."
+    },
+    {
+      "question": "Can a contract with an AI vendor transfer our legal duties to verify and avoid discrimination?",
+      "answer": "No. The contract allocates risk between you and the vendor but does not absolve you to regulators, employees, or courts. If the tool helps make an employment, credit, or other consequential decision, the duties to verify, avoid discrimination, and explain the decision remain yours, and \"the vendor's algorithm did it\" is not a defense."
+    },
+    {
+      "question": "What should we negotiate about an AI tool changing its underlying model?",
+      "answer": "Because vendors update, swap, or deprecate underlying models routinely and behavior can shift materially without any interface change, push for advance written notice before a material change to the model or its behavior so you can re-test before relying on it. For sensitive uses, seek the ability to pin a version for a defined period or a reasonable transition window before a version is retired."
+    },
+    {
+      "question": "What compliance support should an AI vendor provide for a hiring or lending decision tool?",
+      "answer": "If the tool informs hiring, promotion, lending, or other regulated decisions, a growing body of law, for example frameworks discussed under NYC Local Law 144, Illinois's automated-decision and video-interview statutes, the Colorado AI Act, the EU AI Act, and EEOC guidance, may require bias auditing, notice, validation, or accommodation. The vendor cannot discharge your obligations, but it should provide its bias-audit results, validation studies, and the notices and records you need; these requirements vary by jurisdiction and are moving, so confirm current status before relying on them."
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "key": "fmla-ada-decision-tree",
+  "metaDescription": "A five-step decision tree for leave requests: FMLA eligibility and designation, then the ADA accommodation analysis that begins where FMLA exhaustion ends.",
+  "summary": "A practical FMLA-ADA interplay decision tree for in-house counsel and HR leaders, walking from FMLA eligibility and designation through the ADA interactive process and reasonable-accommodation analysis that applies when FMLA never covered the employee or runs out.",
+  "keywords": [
+    "FMLA ADA interplay",
+    "what to do when FMLA leave is exhausted",
+    "FMLA exhaustion termination risk",
+    "is additional leave a reasonable accommodation under the ADA",
+    "ADA interactive process leave request",
+    "FMLA eligibility requirements 1250 hours",
+    "leave as a reasonable accommodation",
+    "undue hardship analysis ADA leave",
+    "employee not FMLA eligible accommodation",
+    "FMLA designation notice timeline",
+    "intermittent leave tracking exhaustion",
+    "ADA accommodation after FMLA runs out"
+  ],
+  "faq": [
+    {
+      "question": "What should an employer do when an employee's FMLA leave is exhausted?",
+      "answer": "Week twelve is where the ADA analysis begins, not where obligations end. Rather than automatically terminating, run the ADA interactive process and consider accommodations, including a finite period of additional unpaid leave with an expected return date, before any decision."
+    },
+    {
+      "question": "Is additional leave a reasonable accommodation under the ADA?",
+      "answer": "A finite period of additional unpaid leave with an expected return date is a recognized reasonable accommodation, such as 'six more weeks per her doctor's note.' Indefinite leave with no idea when the employee can return is generally not."
+    },
+    {
+      "question": "Does the ADA apply to an employee who is not eligible for FMLA?",
+      "answer": "Yes. Not eligible does not mean not protected — the ADA has no hours threshold or tenure requirement. State and local law may also apply, including paid sick leave statutes, state family leave acts, and pregnancy accommodation laws that often cover the employees FMLA misses."
+    },
+    {
+      "question": "What are the FMLA eligibility requirements?",
+      "answer": "FMLA eligibility generally requires a covered employer with 50 or more employees, 12 months of service, 1,250 hours worked in the prior 12 months, and a worksite with 50 employees within 75 miles. This is general information, not legal advice."
+    },
+    {
+      "question": "What are the most common ways leave administration leads to lawsuits?",
+      "answer": "Three patterns account for most lawsuits: automatic termination at FMLA exhaustion with no ADA analysis, rigid maximum-leave policies applied without individual assessment, and interactive processes that exist in policy but not in the file. All three are process failures, which makes them preventable."
+    },
+    {
+      "question": "How should an employer document an undue hardship claim for ADA leave?",
+      "answer": "Undue hardship is an analysis, not a conclusion. Document at the time of the decision who covered the work and at what cost and strain, and what the vacancy does to the operation — a hardship memo written during the decision is evidence, while one written after the lawsuit is a target."
+    }
+  ]
+}
