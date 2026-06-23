@@ -40,18 +40,15 @@ Thumbs.db
 *-options.html
 
 # ─────────────────────────────────────────────────────────────────────────
-# Build tooling is KEPT in the repo by default: build_resources.py,
-# seo_build.py, resources/_data/*.json and seo/*.json are the source of
-# truth that regenerates the site. They contain only public content
-# (already rendered into the HTML), so publishing them is safe and matches
-# the open-source spirit of the project.
-#
-# If you'd rather the public repo hold ONLY the deployable website — e.g.
-# you serve the repo root via GitHub Pages and don't want build_resources.py
-# reachable at tomcedoz.com/build_resources.py — uncomment these four lines:
-#
-# build_resources.py
-# seo_build.py
-# resources/_data/
-# seo/
+# Build tooling + content source + internal config — LOCAL ONLY.
+# Porkbun serves the repo root AS the live site, so the public repo holds
+# ONLY the deployable website. These build/dev files stay on this machine and
+# are never pushed (their output is already baked into the committed HTML).
+# NOTE: GitHub no longer backs these up — keep another copy somewhere safe.
 # ─────────────────────────────────────────────────────────────────────────
+*.py
+resources/_data/
+seo/
+content_review.json
+privacy_inventory.json
+site_policy.json
