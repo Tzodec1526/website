@@ -238,6 +238,18 @@ def apply_page(relpath, canonical, og_type, og_title, desc, nodes, new_desc=None
         r'<link rel="stylesheet" href="(?:\.\./)?assets/styles\.css(?:\?v=[0-9a-f]+)?">',
         f'<link rel="stylesheet" href="{pfx}assets/styles.css?v={STYLES_VER}">',
         doc, count=1)
+    # Security headers as <meta> (Porkbun serves repo root and ignores the
+    # _headers file). CSP omits frame-ancestors (not honored in meta); placed
+    # right after charset so it governs everything parsed after it. Idempotent.
+    doc = re.sub(r'\n?<meta http-equiv="Content-Security-Policy"[^>]*>', '', doc)
+    doc = re.sub(r'\n?<meta name="referrer" content="[^"]*">', '', doc)
+    sec_meta = (
+        '<meta http-equiv="Content-Security-Policy" content="'
+        "default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'none'; "
+        "img-src 'self' data:; script-src 'self'; style-src 'self'; font-src 'self'; "
+        "connect-src 'self'; upgrade-insecure-requests"
+        '">\n<meta name="referrer" content="strict-origin-when-cross-origin">')
+    doc = doc.replace('<meta charset="utf-8">', '<meta charset="utf-8">\n' + sec_meta, 1)
     doc = re.sub(r'\s*<nav class="crumbs" aria-label="Breadcrumb">.*?</nav>\s*', "\n\n      ", doc, flags=re.S)
     crumbs = visible_breadcrumb(relpath)
     if crumbs:
