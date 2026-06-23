@@ -12,13 +12,21 @@ ItemList, etc.). It also refreshes each content page's meta description from the
 workflow-authored data in seo/<key>.json, and (re)writes robots.txt, sitemap.xml,
 and llms.txt. Invisible to readers; everything is in <head> or root files.
 """
-import re, json, glob, os, html
+import re, json, glob, os, html, hashlib
 from datetime import date
 
 DOMAIN = "https://tomcedoz.com"
 ROOT = os.path.dirname(os.path.abspath(__file__))
 BUILD_DATE = os.environ.get("SITE_BUILD_DATE", date.today().isoformat())
 OG = DOMAIN + "/assets/og-default.png"
+
+def _asset_ver(rel):  # content hash → cache-busting query, so asset edits always reach visitors
+    try:
+        return hashlib.sha1(open(os.path.join(ROOT, rel), "rb").read()).hexdigest()[:8]
+    except OSError:
+        return "1"
+SITE_JS_VER = _asset_ver("assets/site.js")
+STYLES_VER = _asset_ver("assets/styles.css")
 
 from build_resources import ORDER, GROUPS, EXISTING  # reuse the library structure
 
@@ -212,7 +220,7 @@ def apply_page(relpath, canonical, og_type, og_title, desc, nodes, new_desc=None
                          f'<meta name="description" content="{esc}">', doc, count=1, flags=re.S)
     # site-wide footer Privacy + License links (idempotent), depth-correct relative path
     pfx = '../' if '/' in relpath else ''
-    doc = re.sub(r'\n?<script src="(?:\.\./)?assets/site\.js"></script>\n?', "\n", doc)
+    doc = re.sub(r'\n?<script src="(?:\.\./)?assets/site\.js(?:\?v=[0-9a-f]+)?"></script>\n?', "\n", doc)
     doc = re.sub(r'\n?<script>if \(\s*\'IntersectionObserver\'.*?</script>\n?', "\n", doc, flags=re.S)
     doc = re.sub(r'\n?<script>\s*\(function \(\) \{.*?document\.querySelectorAll\(\'.rvs\'\).*?\}\)\(\);\s*</script>\n?', "\n", doc, flags=re.S)
     doc = doc.replace(' class="btn-print" onclick="window.print()" type="button"', ' class="btn-print" type="button"')
@@ -224,6 +232,11 @@ def apply_page(relpath, canonical, og_type, og_title, desc, nodes, new_desc=None
         r'<link rel="icon" type="image/svg\+xml" href="(?:\.\./)?assets/favicon\.svg">',
         '<link rel="icon" href="/favicon.ico" sizes="any">\n'
         '<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">',
+        doc, count=1)
+    # cache-bust the stylesheet so CSS edits always reach returning visitors
+    doc = re.sub(
+        r'<link rel="stylesheet" href="(?:\.\./)?assets/styles\.css(?:\?v=[0-9a-f]+)?">',
+        f'<link rel="stylesheet" href="{pfx}assets/styles.css?v={STYLES_VER}">',
         doc, count=1)
     doc = re.sub(r'\s*<nav class="crumbs" aria-label="Breadcrumb">.*?</nav>\s*', "\n\n      ", doc, flags=re.S)
     crumbs = visible_breadcrumb(relpath)
@@ -242,7 +255,7 @@ def apply_page(relpath, canonical, og_type, og_title, desc, nodes, new_desc=None
         doc = doc.replace('<p class="print-note">', PRINT_LEGAL + "\n        <p class=\"print-note\">", 1)
     doc = BLOCK_RE.sub("\n", doc)  # strip any prior block (idempotent)
     block = build_block(canonical, og_type, og_title, desc, nodes)
-    doc = doc.replace("</head>", block + f'\n<script src="{pfx}assets/site.js"></script>\n</head>', 1)
+    doc = doc.replace("</head>", block + f'\n<script src="{pfx}assets/site.js?v={SITE_JS_VER}"></script>\n</head>', 1)
     write(fp, doc)
 
 # ---- collect resource titles (for ItemList + breadcrumbs) ----------------

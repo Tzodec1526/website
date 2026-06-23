@@ -51,7 +51,9 @@
     var activeCat = 'all';
 
     function apply() {
-      var q = (input.value || '').trim().toLowerCase();
+      // normalize the query the same way data-text is built (punctuation -> space),
+      // so hyphenated terms like "non-compete" or "30(b)(6)" still match.
+      var q = (input.value || '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
       var shown = 0;
       cards.forEach(function (c) {
         var okCat = activeCat === 'all' || c.getAttribute('data-group') === activeCat;
