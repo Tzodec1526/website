@@ -23,6 +23,7 @@ PUBLIC_ROOT_FILES = [
     "how-i-work.html",
     "contact.html",
     "privacy.html",
+    "favicon.ico",
     "robots.txt",
     "sitemap.xml",
     "llms.txt",

@@ -218,6 +218,13 @@ def apply_page(relpath, canonical, og_type, og_title, desc, nodes, new_desc=None
     doc = doc.replace(' class="btn-print" onclick="window.print()" type="button"', ' class="btn-print" type="button"')
     doc = normalize_inline_styles(doc)
     doc = remove_third_party_fonts(doc)
+    # Declare a raster /favicon.ico first (the format Google's favicon crawler
+    # resolves most reliably), then the SVG. Root-absolute so depth is uniform.
+    doc = re.sub(
+        r'<link rel="icon" type="image/svg\+xml" href="(?:\.\./)?assets/favicon\.svg">',
+        '<link rel="icon" href="/favicon.ico" sizes="any">\n'
+        '<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">',
+        doc, count=1)
     doc = re.sub(r'\s*<nav class="crumbs" aria-label="Breadcrumb">.*?</nav>\s*', "\n\n      ", doc, flags=re.S)
     crumbs = visible_breadcrumb(relpath)
     if crumbs:

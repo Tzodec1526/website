@@ -156,26 +156,6 @@ a:hover { color: var(--navy-deep); text-decoration-color: var(--navy); }
 
 @media (max-width: 640px) { .hero { padding: 3.5rem 0 3rem; } }
 
-.library-jump {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem 0.9rem;
-  margin-top: 1.4rem;
-  font-family: var(--sans);
-  font-size: 0.82rem;
-}
-.library-jump a {
-  color: var(--slate);
-  text-decoration: none;
-  border-bottom: 1px solid var(--steel);
-  padding: 0.1rem 0;
-}
-.library-jump a:hover,
-.library-jump a:focus-visible {
-  color: var(--navy);
-  border-bottom-color: var(--navy);
-}
-
 /* ---- Section heads ------------------------------------------------------ */
 
 .section { padding: 4.2rem 0; }
@@ -773,22 +753,11 @@ a:hover .arr { width: 46px; }
 /* A real link affordance in the navy band */
 .band a { text-decoration-color: var(--steel); }
 
-/* OpenType figures — oldstyle in reading text, tabular-lining for UI numerals */
-.hero .lede, .prose, .band .statement,
-.res-card .desc, .insight-item .sum, .insight-item .date,
-.fig-cap em, .standfirst, .byline-line {
-  font-feature-settings: "kern", "liga", "onum" 1, "pnum" 1;
-}
-.section-head .no, .res-card .idx, .res-card .meta, .hero-meta,
-.insight-item .where, .res-card .type, .eyebrow {
-  font-feature-settings: "tnum" 1, "lnum" 1;
-}
-
 /* Hanging punctuation on the big quiet text blocks (progressive enhancement) */
 .band .statement, .hero .lede, .prose { hanging-punctuation: first; }
 
 /* Sharpen the display headline */
-.hero-v2 h1 { letter-spacing: -0.011em; font-variation-settings: "opsz" 60; }
+.hero-v2 h1 { letter-spacing: -0.011em; }
 .fig .lb { font-size: 11.5px; }
 .fig .ch { font-size: 9px; }
 
@@ -837,4 +806,61 @@ a:hover .arr { width: 46px; }
   content: ""; display: inline-block;
   width: 0.34em; height: 0.34em; background: currentColor;
   margin-right: 0.66em; vertical-align: 0.1em;
+}
+
+/* ==========================================================================
+   Resource library filter / search (progressive enhancement)
+   ========================================================================== */
+
+.res-filter { display: none; }
+.has-js .res-filter {
+  display: block;
+  margin-bottom: 2.6rem;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 1.4rem;
+}
+.res-filter-row {
+  display: flex; flex-wrap: wrap; align-items: center;
+  gap: 0.9rem 1.6rem;
+}
+.res-filter-field { display: flex; align-items: baseline; gap: 0.75rem; flex: 1 1 18rem; min-width: 0; }
+.res-filter-label {
+  font-family: var(--sans); font-size: 0.7rem; font-weight: 600;
+  letter-spacing: 0.12em; text-transform: uppercase; color: var(--slate); flex: none;
+}
+.res-filter-field input {
+  flex: 1 1 auto; min-width: 0;
+  font-family: var(--sans); font-size: 0.95rem; color: var(--ink);
+  background: transparent; border: 0; border-bottom: 1px solid var(--navy);
+  padding: 0.4rem 0.1rem; border-radius: 0;
+}
+.res-filter-field input::placeholder { color: var(--mist); }
+.res-filter-field input:focus { outline: none; border-bottom-width: 2px; }
+
+.res-cats { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.res-cat {
+  font-family: var(--sans); font-size: 0.78rem; font-weight: 500; color: var(--slate);
+  background: var(--paper); border: 1px solid var(--line); border-radius: 2px;
+  padding: 0.34rem 0.85rem; cursor: pointer;
+  transition: border-color 120ms ease, color 120ms ease, background 120ms ease;
+}
+.res-cat:hover { border-color: var(--navy); color: var(--navy); }
+.res-cat.is-active { background: var(--navy); border-color: var(--navy); color: #fff; }
+
+.res-count {
+  font-family: var(--sans); font-size: 0.8rem; color: var(--mist);
+  margin: 0.95rem 0 0; min-height: 1em;
+}
+.res-noresults { font-size: 1rem; color: var(--slate); margin: 0.4rem 0 0; }
+.res-reset {
+  font-family: var(--sans); font-size: inherit; font-weight: 600; color: var(--navy);
+  background: none; border: 0; border-bottom: 1px solid var(--steel);
+  padding: 0; cursor: pointer;
+}
+.res-reset:hover { border-bottom-color: var(--navy); }
+
+.res-card.is-hidden, .res-group.is-hidden { display: none; }
+
+@media (max-width: 600px) {
+  .res-filter-field { flex-basis: 100%; }
 }

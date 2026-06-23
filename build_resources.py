@@ -4,7 +4,7 @@
 Content (the JSON) is authored by the workflow; presentation (this template) is
 deterministic so every page matches the existing hand-built pages exactly.
 """
-import json, os, sys, glob
+import json, os, sys, glob, re, html as _html
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 DATA = os.path.join(ROOT, "resources", "_data")
@@ -157,22 +157,34 @@ def render_pages(newdata):
         n += 1
     return n
 
-def card(slug, newdata):
+def _searchtext(*parts):
+    """Plain lowercase word string for client-side filtering (no tags/entities)."""
+    s = " ".join(parts)
+    s = re.sub(r"<[^>]+>", " ", s)               # strip tags
+    s = _html.unescape(s)                         # decode &middot; &mdash; &rsquo; etc.
+    s = re.sub(r"[^a-z0-9]+", " ", s.lower())     # words only
+    return " ".join(s.split())
+
+def card(slug, newdata, group):
     if slug in EXISTING:
         t, title, desc, meta = EXISTING[slug]
     else:
         o = newdata[slug]; t, title, desc, meta = o["cardType"], o["cardTitle"], o["cardDesc"], o["cardMeta"]
-    return ('          <article class="res-card">\n'
+    return ('          <article class="res-card" data-group="%s" data-text="%s">\n'
             '            <p class="type">%s</p>\n'
             '            <h3><a href="resources/%s.html">%s</a></h3>\n'
             '            <p class="desc">%s</p>\n'
             '            <p class="meta"><span>%s</span><span class="arrow" aria-hidden="true">&rarr;</span></p>\n'
-            '          </article>') % (t, slug, title, desc, meta)
+            '          </article>') % (group, _searchtext(title, desc, t), t, slug, title, desc, meta)
+
+CAT_LABELS = [("all", "All"), ("ai", "AI"), ("employment", "Employment"),
+              ("commercial", "Commercial"), ("cross", "Cross-practice")]
 
 def render_section(newdata):
+    total = sum(len(v) for v in ORDER.values())
     blocks = []
     for key, gid, gtitle, gnote in GROUPS:
-        cards = "\n\n".join(card(s, newdata) for s in ORDER[key])
+        cards = "\n\n".join(card(s, newdata, key) for s in ORDER[key])
         blocks.append(
             '      <div class="res-group">\n'
             '        <div class="section-head">\n'
@@ -181,12 +193,30 @@ def render_section(newdata):
             '        <p class="groupnote">%s</p>\n'
             '        <div class="res-grid">\n\n%s\n\n        </div>\n'
             '      </div>' % (gid, gtitle, gnote, cards))
+    catbtns = "\n".join(
+        '          <button type="button" class="res-cat%s" data-cat="%s" aria-pressed="%s">%s</button>'
+        % (" is-active" if k == "all" else "", k, "true" if k == "all" else "false", lbl)
+        for k, lbl in CAT_LABELS)
+    filt = (
+        '      <div class="res-filter" role="search" data-total="%d">\n'
+        '        <div class="res-filter-row">\n'
+        '          <label class="res-filter-field">\n'
+        '            <span class="res-filter-label">Search</span>\n'
+        '            <input type="search" id="res-q" placeholder="Search by name or topic…" autocomplete="off" spellcheck="false">\n'
+        '          </label>\n'
+        '          <div class="res-cats" role="group" aria-label="Filter by category">\n%s\n          </div>\n'
+        '        </div>\n'
+        '        <p class="res-count" id="res-count" role="status" aria-live="polite"></p>\n'
+        '      </div>' % (total, catbtns))
+    noresults = ('      <p class="res-noresults" id="res-noresults" hidden>Nothing matches that search. '
+                 '<button type="button" class="res-reset">Clear filters</button></p>')
     callout = ('      <div class="callout callout-prose">\n'
                '        <span class="callout-label">How to use these</span>\n'
                '        <p>Use them in your own work freely — print them, drop them into your playbooks, adapt them to your policies. If you republish or redistribute them, the license (<a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="noopener">CC&nbsp;BY-SA&nbsp;4.0</a>) asks only that you keep the credit and share under the same terms. They describe patterns, not your facts: state law varies more than most teams expect, and several of these areas (non-competes, leave laws, final-pay rules) are moving targets. When a real matter is on the table, run the specifics past your counsel.</p>\n'
                '      </div>')
     return ('  <section class="section library-sections" aria-labelledby="' + GROUPS[0][1] + '">\n'
             '    <div class="container">\n\n' +
+            filt + "\n\n" + noresults + "\n\n" +
             "\n\n".join(blocks) + "\n\n" + callout +
             '\n\n    </div>\n  </section>')
 
