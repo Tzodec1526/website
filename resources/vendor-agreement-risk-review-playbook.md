@@ -1,0 +1,1 @@
+# Full Markdown content here... (paste the entire playbook)
