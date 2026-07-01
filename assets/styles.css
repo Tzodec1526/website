@@ -22,6 +22,7 @@
 
   --w-site: 1080px;
   --w-prose: 46rem;
+  --w-text: 40rem;
 }
 
 /* ---- Reset / base ----------------------------------------------------- */
@@ -96,7 +97,7 @@ a:hover { color: var(--navy-deep); text-decoration-color: var(--navy); }
 
 /* ---- Header ------------------------------------------------------------ */
 
-.site-head { border-bottom: 1px solid var(--line); background: var(--paper); }
+.site-head { border-top: 3px solid var(--navy); border-bottom: 1px solid var(--line); background: var(--paper); }
 
 .head-row {
   display: flex; flex-wrap: wrap; align-items: baseline;
@@ -144,7 +145,7 @@ a:hover { color: var(--navy-deep); text-decoration-color: var(--navy); }
 
 .hero .lede {
   font-size: 1.17rem; line-height: 1.6; color: var(--slate);
-  max-width: 36rem; margin-bottom: 1.6rem;
+  max-width: 36rem; margin-bottom: 1.2rem;
 }
 
 .hero-meta {
@@ -165,10 +166,15 @@ a:hover { color: var(--navy-deep); text-decoration-color: var(--navy); }
 
 .section-head {
   display: flex; align-items: baseline; justify-content: space-between;
-  gap: 1rem; border-top: 1px solid var(--navy);
+  gap: 1rem;
   padding-top: 1.1rem; margin-bottom: 2.2rem;
 }
-.section-head h2 { font-size: 1.05rem; letter-spacing: 0.01em; margin: 0; }
+/* the chapter rule lives in ::after so it can draw itself in (see motion) */
+.section-head::after {
+  content: ""; position: absolute; left: 0; right: 0; top: 0;
+  height: 1px; background: var(--navy);
+}
+.section-head h2 { font-size: 1.4rem; letter-spacing: 0; margin: 0; }
 .section-head .more {
   font-family: var(--sans); font-size: 0.84rem; font-weight: 500;
   white-space: nowrap; text-decoration: none; color: var(--slate);
@@ -200,13 +206,13 @@ a:hover { color: var(--navy-deep); text-decoration-color: var(--navy); }
   margin: 0 0 0.9rem;
 }
 
-.res-card h3 { font-size: 1.16rem; line-height: 1.3; margin: 0 0 0.5rem; }
+.res-card h3 { font-size: 1.2rem; line-height: 1.3; margin: 0 0 0.5rem; }
 .res-card h3 a { text-decoration: none; color: var(--navy); }
 .res-card h3 a::after { content: ""; position: absolute; inset: 0; }
 .res-card h3 a:focus-visible { outline: none; }
 .res-card:focus-within h3 a { text-decoration: underline; text-decoration-color: var(--steel); }
 
-.res-card .desc { font-size: 0.94rem; line-height: 1.55; color: var(--slate); margin: 0 0 1.2rem; }
+.res-card .desc { font-size: 0.94rem; line-height: 1.55; color: var(--slate); margin: 0 0 1.2rem; text-wrap: pretty; }
 
 .res-card .meta {
   margin-top: auto; font-family: var(--sans); font-size: 0.76rem; color: var(--mist);
@@ -224,12 +230,12 @@ a:hover { color: var(--navy-deep); text-decoration-color: var(--navy); }
 
 .band {
   background: var(--navy); color: #fff;
-  padding: 4.6rem 0;
+  padding: 6.5rem 0;
 }
 .band .statement {
-  font-size: clamp(1.35rem, 2.6vw, 1.85rem);
-  line-height: 1.45; font-weight: 400; max-width: 33ch;
-  margin: 0 0 1.4rem; color: #fff; text-wrap: balance;
+  font-size: clamp(1.6rem, 3.2vw, 2.1rem);
+  line-height: 1.35; letter-spacing: -0.012em; font-weight: 400; max-width: 33ch;
+  margin: 0 0 1.8rem; color: #fff; text-wrap: balance;
 }
 .band .statement strong { font-weight: 600; }
 .band .note { font-family: var(--sans); font-size: 0.875rem; color: var(--steel); max-width: 44rem; margin: 0; }
@@ -237,7 +243,7 @@ a:hover { color: var(--navy-deep); text-decoration-color: var(--navy); }
 /* ---- Landing: AI-section framing + author strip ---------------------------- */
 
 .section-lede {
-  max-width: var(--w-prose); color: var(--slate);
+  max-width: var(--w-text); color: var(--slate);
   font-size: 1.02rem; line-height: 1.6; margin: -0.6rem 0 2rem;
 }
 
@@ -278,10 +284,10 @@ a:hover { color: var(--navy-deep); text-decoration-color: var(--navy); }
   letter-spacing: 0.12em; text-transform: uppercase; color: var(--mist);
   margin: 0 0 0.45rem;
 }
-.insight-item h3 { font-size: 1.3rem; margin: 0 0 0.4rem; line-height: 1.3; }
+.insight-item h3 { font-size: 1.38rem; margin: 0 0 0.4rem; line-height: 1.3; }
 .insight-item h3 a { text-decoration: none; }
 .insight-item h3 a:hover { text-decoration: underline; text-decoration-color: var(--steel); }
-.insight-item .sum { color: var(--slate); max-width: var(--w-prose); margin: 0 0 0.5rem; font-size: 0.98rem; }
+.insight-item .sum { color: var(--slate); max-width: var(--w-text); margin: 0 0 0.5rem; font-size: 0.98rem; text-wrap: pretty; }
 .insight-item .date { font-family: var(--sans); font-size: 0.78rem; color: var(--mist); margin: 0; }
 
 /* Compact link list inside a grouped "series" insight */
@@ -558,17 +564,21 @@ a:hover { color: var(--navy-deep); text-decoration-color: var(--navy); }
 
 .arr {
   position: relative; display: inline-block; vertical-align: middle;
-  width: 30px; height: 1px; background: var(--navy);
+  width: 30px; height: 1px; background: currentColor;
   margin: 0 0 0.1rem 0.65rem;
   transition: width 240ms cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 .arr::after {
   content: ""; position: absolute; right: -1px; top: -3.5px;
   width: 7px; height: 7px;
-  border-top: 1px solid var(--navy); border-right: 1px solid var(--navy);
+  border-top: 1px solid currentColor; border-right: 1px solid currentColor;
   transform: rotate(45deg);
 }
 a:hover .arr { width: 46px; }
+
+/* small variant — the one arrow language everywhere a glyph used to sit */
+.arr-s { width: 18px; margin-left: 0.5rem; }
+a:hover .arr-s { width: 30px; }
 
 /* Hero */
 .hero-v2 { padding: 5rem 0 4.8rem; overflow: hidden; }
@@ -577,27 +587,37 @@ a:hover .arr { width: 46px; }
   gap: 3.5rem; align-items: center;
 }
 .hero-v2 h1 {
-  font-size: clamp(2.1rem, 4.1vw, 3.05rem);
+  font-size: clamp(2.1rem, 4.6vw, 3.35rem);
+  font-weight: 400;
+  line-height: 1.1;
   max-width: 24ch;
 }
-.hero-v2 h1 em { font-style: italic; font-weight: 600; }
-.hero-cta { margin: 1.9rem 0 0; }
+.hero-v2 h1 em { font-style: italic; font-weight: 400; }
+.hero-cta { margin: 1.6rem 0 0; }
 .hero-cta a {
+  display: inline-block;
   font-family: var(--sans); font-size: 0.875rem; font-weight: 600;
   color: var(--navy); text-decoration: none; letter-spacing: 0.01em;
+  border: 1px solid var(--navy); border-radius: 2px;
+  padding: 0.55rem 1rem;
+  transition: background 140ms ease, color 140ms ease;
 }
+.hero-cta a:hover { background: var(--navy); color: #fff; }
+.hero-v2 .hero-meta { margin-top: 1.55rem; }
 
-/* The engraving: Fig. 1 */
+/* The engraving: Fig. 1 (shared by the desktop and mobile figures).
+   Record nodes are solid navy — the identity square; litigation circles stay
+   hollow: that side of the line hasn't been written yet. */
 .fig { margin: 0; min-width: 0; }
 .fig svg { width: 100%; height: auto; display: block; }
-.fig .ln   { stroke: #c6cdd9; stroke-width: 1; fill: none; }
-.fig .lk   { stroke: var(--navy); stroke-width: 1.3; fill: none; }
-.fig .ghost{ stroke: #c6cdd9; stroke-width: 1; fill: none; stroke-dasharray: 2 5; opacity: 0.7; }
-.fig .nd   { stroke: var(--navy); stroke-width: 1.2; fill: #fff; }
-.fig .ns   { stroke: #aab4c4; stroke-width: 1.1; fill: #fff; }
+.fig .ln, .fig-mobile .ln   { stroke: #c6cdd9; stroke-width: 1; fill: none; }
+.fig .lk, .fig-mobile .lk   { stroke: var(--navy); stroke-width: 1.6; fill: none; }
+.fig .ghost, .fig-mobile .ghost { stroke: #c6cdd9; stroke-width: 1; fill: none; stroke-dasharray: 2 5; opacity: 0.7; }
+.fig .nd, .fig-mobile .nd   { fill: var(--navy); stroke: none; }
+.fig .ns, .fig-mobile .ns   { stroke: #aab4c4; stroke-width: 1.1; fill: #fff; }
 .fig .nt   { fill: var(--navy); }
-.fig .lb   { font-family: var(--sans); font-size: 10.5px; fill: var(--mist); letter-spacing: 0.01em; }
-.fig .ch   { font-family: var(--sans); font-size: 8.5px; font-weight: 600; letter-spacing: 0.12em; fill: var(--navy); }
+.fig .lb, .fig-mobile .lb   { font-family: var(--sans); font-size: 11px; fill: var(--slate); letter-spacing: 0.01em; }
+.fig .ch, .fig-mobile .ch   { font-family: var(--sans); font-size: 9px; font-weight: 600; letter-spacing: 0.12em; fill: var(--navy); }
 .fig .ch.off { fill: #aab4c4; }
 .fig-cap {
   font-family: var(--sans); font-size: 0.72rem; color: var(--mist);
@@ -612,19 +632,21 @@ a:hover .arr { width: 46px; }
   .hero-v2 { padding: 3.6rem 0 3.2rem; }
 }
 
-/* Numbered section heads */
+/* Numbered section heads — quiet Georgia folios, apparatus not ornament */
 .section-head .no {
-  font-family: var(--sans); font-size: 0.68rem; font-weight: 600;
-  color: var(--mist); letter-spacing: 0.12em; margin-right: 0.95rem;
-  position: relative; top: -0.12em;
+  font-family: var(--serif); font-style: italic; font-size: 0.95rem; font-weight: 400;
+  color: var(--slate); letter-spacing: 0.04em; margin-right: 0.7rem;
+  position: relative; top: -0.08em;
 }
 
-/* Card index numerals */
+/* Card index numerals — folios in the card's top margin, clear of the text */
 .res-card .idx {
-  position: absolute; top: 1.35rem; right: 1.4rem;
-  font-family: var(--sans); font-size: 0.66rem; font-weight: 500;
-  color: #b3bcc9; letter-spacing: 0.1em; margin: 0;
+  position: absolute; top: 0.4rem; right: 1.4rem;
+  font-family: var(--serif); font-style: italic; font-size: 1.05rem; font-weight: 400;
+  color: var(--steel); letter-spacing: 0.02em; margin: 0; line-height: 1;
+  transition: color 140ms ease;
 }
+.res-card:hover .idx { color: var(--navy); }
 
 /* Navy band: ghosted section mark + industries row */
 .band { position: relative; overflow: hidden; }
@@ -633,12 +655,12 @@ a:hover .arr { width: 46px; }
   content: "\00A7";
   position: absolute; right: -0.5rem; top: 50%; transform: translateY(-52%);
   font-family: var(--serif); font-size: 27rem; font-weight: 600; line-height: 1;
-  color: #fff; opacity: 0.045; pointer-events: none; user-select: none;
+  color: #fff; opacity: 0.075; pointer-events: none; user-select: none;
 }
 .industries {
   font-family: var(--sans); font-size: 0.72rem; font-weight: 600;
   letter-spacing: 0.18em; text-transform: uppercase; color: var(--steel);
-  margin: 0 0 1.3rem;
+  margin: 0 0 1.1rem;
 }
 .industries span { margin: 0 0.9em; color: var(--navy-line); font-weight: 400; }
 
@@ -660,28 +682,28 @@ a:hover .arr { width: 46px; }
     to { opacity: 1; transform: none; }
   }
 
-  /* the figure draws itself once */
-  .js .fig .draw { stroke-dasharray: 1; animation: draw 0.9s ease both; }
-  .js .fig .d1 { animation-delay: 0.35s; }
-  .js .fig .d2 { animation-delay: 0.75s; }
-  .js .fig .d3 { animation-delay: 1.05s; }
-  .js .fig .d4 { animation-delay: 1.05s; }
-  .js .fig .d5 { animation-delay: 1.45s; }
-  .js .fig .d6 { animation-delay: 1.75s; }
-  .js .fig .d7 { animation-delay: 1.75s; }
+  /* the figure draws itself once — one causal sequence, left to right:
+     the record line first, each node popping as the line front passes it,
+     then the complaint-filed rule, and only after it lands, litigation. */
+  .js .fig { animation: appear 0.3s ease both; }
+  .js .fig .draw { stroke-dasharray: 1; animation: draw 0.7s ease both; }
+  .js .fig .d1 { animation-delay: 0.1s; }
+  .js .fig .d3 { animation-delay: 0.85s; }
+  .js .fig .d5 { animation-delay: 1.6s; animation-duration: 0.5s; }
 
   @keyframes draw {
     from { stroke-dashoffset: 1; }
     to { stroke-dashoffset: 0; }
   }
 
-  .js .fig .pop { animation: appear 0.55s ease both; }
-  .js .fig .p1 { animation-delay: 0.3s; }
-  .js .fig .p2 { animation-delay: 0.7s; }
-  .js .fig .p3 { animation-delay: 1.0s; }
-  .js .fig .p4 { animation-delay: 1.4s; }
-  .js .fig .p5 { animation-delay: 1.7s; }
-  .js .fig .p6 { animation-delay: 2.05s; }
+  .js .fig .pop { animation: appear 0.45s ease both; }
+  .js .fig .s1 { animation-delay: 0.18s; }
+  .js .fig .s2 { animation-delay: 0.37s; }
+  .js .fig .s3 { animation-delay: 0.56s; }
+  .js .fig .s4 { animation-delay: 0.73s; }
+  .js .fig .s5 { animation-delay: 0.95s; }
+  .js .fig .s6 { animation-delay: 1.75s; }
+  .js .fig .s7 { animation-delay: 1.95s; }
 
   @keyframes appear {
     from { opacity: 0; }
@@ -691,18 +713,33 @@ a:hover .arr { width: 46px; }
   /* once the intro has played, drop the animations entirely so the page
      is plain static content for any renderer (captures, print, etc.) */
   .js.settled .rv,
+  .js.settled .fig,
   .js.settled .fig .draw,
   .js.settled .fig .pop { animation: none; }
 
-  /* scroll-in reveals */
+  /* scroll-in reveals — border-color rides in the list so card hover
+     easing survives the reveal transition (and its stagger delays) */
   .js .rvs {
-    opacity: 0; transform: translateY(18px);
-    transition: opacity 0.7s ease, transform 0.7s cubic-bezier(0.22, 0.61, 0.36, 1);
+    opacity: 0; transform: translateY(10px);
+    transition: opacity 0.45s ease, transform 0.45s cubic-bezier(0.22, 0.61, 0.36, 1), border-color 140ms ease;
   }
   .js .rvs.in { opacity: 1; transform: none; }
-  .js .res-grid .rvs:nth-child(2) { transition-delay: 0.08s; }
-  .js .res-grid .rvs:nth-child(3) { transition-delay: 0.16s; }
-  .js .res-grid .rvs:nth-child(4) { transition-delay: 0.24s; }
+  .js .res-grid .rvs:nth-child(2) { transition: opacity 0.45s ease 0.08s, transform 0.45s cubic-bezier(0.22, 0.61, 0.36, 1) 0.08s, border-color 140ms ease; }
+  .js .res-grid .rvs:nth-child(3) { transition: opacity 0.45s ease 0.16s, transform 0.45s cubic-bezier(0.22, 0.61, 0.36, 1) 0.16s, border-color 140ms ease; }
+  .js .res-grid .rvs:nth-child(4) { transition: opacity 0.45s ease 0.24s, transform 0.45s cubic-bezier(0.22, 0.61, 0.36, 1) 0.24s, border-color 140ms ease; }
+
+  /* chapter rules draw themselves: the node lands, the line extends from it */
+  .js .section-head.rvs { transform: none; }
+  .js .section-head.rvs::before {
+    transform: scale(0);
+    transition: transform 0.2s ease 0.05s;
+  }
+  .js .section-head.rvs::after {
+    transform: scaleX(0); transform-origin: 0 50%;
+    transition: transform 0.4s cubic-bezier(0.22, 0.61, 0.36, 1) 0.2s;
+  }
+  .js .section-head.rvs.in::before { transform: scale(1); }
+  .js .section-head.rvs.in::after { transform: scaleX(1); }
 }
 
 /* ---- Print -------------------------------------------------------------------- */
@@ -757,15 +794,14 @@ a:hover .arr { width: 46px; }
 .band .statement, .hero .lede, .prose { hanging-punctuation: first; }
 
 /* Sharpen the display headline */
-.hero-v2 h1 { letter-spacing: -0.011em; }
-.fig .lb { font-size: 11.5px; }
-.fig .ch { font-size: 9px; }
+.hero-v2 h1 { letter-spacing: -0.015em; }
+.fig .lb { font-size: 12.5px; }
+.fig .ch { font-size: 9.5px; }
 
-/* Desktop hero — top-align the columns and give Fig. 1 more room */
+/* Desktop hero — top-align the columns and let Fig. 1 structure the spread */
 @media (min-width: 1021px) {
-  .hero-grid { grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); align-items: start; }
-  .hero-v2 { padding-top: 4.4rem; padding-bottom: 3.6rem; }
-  .fig { margin-top: 2.4rem; }
+  .hero-grid { grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: 2.75rem; align-items: start; }
+  .hero-v2 { padding-top: 3.6rem; padding-bottom: 3.6rem; }
 }
 
 /* Signature as a system — a small node on each chapter rule (echoes Fig. 1) */
@@ -775,18 +811,22 @@ a:hover .arr { width: 46px; }
   width: 7px; height: 7px; background: var(--navy);
 }
 
-/* Break card-grid monotony — wash the AI cards so the two grids alternate */
-#ai .res-card { background: var(--wash); border-color: var(--line); }
+/* Chapter break — the AI section sits on a full-bleed wash field, paper cards on top */
+#ai {
+  background: var(--wash);
+  border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
+  padding: 3.6rem 0 4.2rem;
+}
+#ai .res-card { background: var(--paper); border-color: var(--line); }
 #ai .res-card:hover { border-color: var(--navy); }
 
 /* Fig. 1 — one quiet hover affordance */
 .fig .nd { transition: fill 140ms ease; }
-.fig:hover .nd { fill: #dfe4ec; }
-.fig .nd:hover { fill: var(--navy); }
+.fig .nd:hover { fill: var(--navy-line); }
 
 /* Demoted "Missing something?" coda */
 .coda-wrap { padding: 0.4rem 0 0; }
-.coda { max-width: var(--w-prose); color: var(--slate); font-size: 1rem; margin: 0; }
+.coda { max-width: var(--w-text); color: var(--slate); font-size: 1rem; margin: 0; }
 
 /* Keep a signature on mobile — simplified Fig. 1 instead of hiding it */
 .fig-mobile { display: none; }
@@ -798,6 +838,8 @@ a:hover .arr { width: 46px; }
 /* Print/capture robustness — never freeze landing reveals at opacity:0 */
 @media print {
   .js .rvs, .js .rv, .fig, .fig-mobile { opacity: 1 !important; transform: none !important; }
+  .js .rvs::before, .js .rvs::after { transform: none !important; }
+  .js .fig, .js .fig .draw, .js .fig .pop { animation: none !important; }
 }
 
 /* Wordmark identity node — a single leading square that echoes the Fig. 1 / chapter

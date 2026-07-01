@@ -38,6 +38,8 @@ Thumbs.db
 # Scratch / preview pages (in case any get regenerated)
 *-preview.html
 *-options.html
+mockup-*.html
+assets/mockup-*.css
 
 # ─────────────────────────────────────────────────────────────────────────
 # Build tooling + content source + internal config — LOCAL ONLY.
